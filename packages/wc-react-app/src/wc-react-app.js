@@ -1,7 +1,7 @@
 import React from 'react';
-import './react-app.scss';
+import './wc-react-app.scss';
 
-class ReactApp extends React.Component {
+class WCReactApp extends React.Component {
     render() {
         return (
             <div className="parent-wrapper">
@@ -13,4 +13,4 @@ class ReactApp extends React.Component {
     }
 }
 
-export default ReactApp;
+export default WCReactApp;

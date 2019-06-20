@@ -7,7 +7,7 @@ exports.default = void 0;
 
 var _react = _interopRequireDefault(require("react"));
 
-require("./react-app.scss");
+require("./wc-react-app.scss");
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -29,30 +29,30 @@ function _inherits(subClass, superClass) { if (typeof superClass !== "function" 
 
 function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
 
-var ReactApp =
+var WCReactApp =
 /*#__PURE__*/
 function (_React$Component) {
-  _inherits(ReactApp, _React$Component);
+  _inherits(WCReactApp, _React$Component);
 
-  function ReactApp() {
-    _classCallCheck(this, ReactApp);
+  function WCReactApp() {
+    _classCallCheck(this, WCReactApp);
 
-    return _possibleConstructorReturn(this, _getPrototypeOf(ReactApp).apply(this, arguments));
+    return _possibleConstructorReturn(this, _getPrototypeOf(WCReactApp).apply(this, arguments));
   }
 
-  _createClass(ReactApp, [{
+  _createClass(WCReactApp, [{
     key: "render",
     value: function render() {
       return _react.default.createElement("div", {
         className: "parent-wrapper"
       }, _react.default.createElement("span", {
         className: "title"
-      }, "React Child"));
+      }, "React Child Updated"));
     }
   }]);
 
-  return ReactApp;
+  return WCReactApp;
 }(_react.default.Component);
 
-var _default = ReactApp;
+var _default = WCReactApp;
 exports.default = _default;
