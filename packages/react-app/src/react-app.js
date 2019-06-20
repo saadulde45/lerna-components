@@ -6,7 +6,7 @@ class ReactApp extends React.Component {
         return (
             <div className="parent-wrapper">
                 <span className="title">
-                    React Child
+                    React Child Updated
                 </span>
             </div>
         );
