@@ -11,7 +11,7 @@
     "react-dom": "^16.8.6"
   },
   "scripts": {
-    "publish": "lerna version && lerna publish from-package --no-verify-access --registry=http://localhost:8081/repository/npm-private/",
+    "publish": "lerna version patch --yes && lerna publish from-package --no-verify-access --registry=http://localhost:8081/repository/npm-private/",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom"
