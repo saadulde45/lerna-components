@@ -1,6 +1,18 @@
 {
   "name": "wc-nested-react-component",
   "version": "0.1.2",
+  "description": "Nested react component",
+  "author": "Saad Ulde",
+  "homepage": "",
+  "license": "MIT",
+  "main": "dist/wc-nested-react-component.js",
+  "directories": {
+    "src": "src",
+    "test": "__tests__"
+  },
+  "files": [
+    "dist"
+  ],
   "scripts": {
     "start": "react-scripts start",
     "build-old": "npm run build:react && npm run build:bundle",
