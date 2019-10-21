@@ -1,6 +1,6 @@
 {
   "name": "wc-react-app",
-  "version": "0.2.3",
+  "version": "0.2.4",
   "description": "A sample react component",
   "author": "Saad Ulde",
   "homepage": "",
@@ -24,7 +24,7 @@
   },
   "publishConfig": {
     "access": "public",
-		"registry": "http://localhost:8081/repository/npm-private/"
+    "registry": "http://localhost:8081/repository/npm-private/"
   },
   "gitHead": "9731e22597c926ddce88922dfe9f1a8093cbd966",
   "devDependencies": {
