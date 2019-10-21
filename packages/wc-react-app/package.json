@@ -16,12 +16,15 @@
   "scripts": {
     "start": "npm run build && $(npm bin)/webpack-dev-server --config ./webpack.config.js",
     "start:prod": "npm run build && $(npm bin)/webpack-dev-server --config ./webpack.config.js --mode production",
-    "test": "jest --forceExit",
+    "test": "jest",
     "common": "$(npm bin)/mkdirp dist && $(npm bin)/copyfiles index.html dist && $(npm bin)/copyfiles -f **/*.scss dist",
-    "build": "npm run common && babel src --out-dir dist"
+    "build": "npm run common && babel src --out-dir dist",
+    "transpile": "babel src -d dist --ignore '**/*.spec.js,**/*.stories.js'",
+    "jest": "jest --coverage --verbose --color"
   },
   "publishConfig": {
-    "access": "public"
+    "access": "public",
+		"registry": "http://localhost:8081/repository/npm-private/"
   },
   "gitHead": "9731e22597c926ddce88922dfe9f1a8093cbd966",
   "devDependencies": {
@@ -32,8 +35,15 @@
     "@babel/preset-es2015": "^7.0.0-beta.53",
     "@babel/preset-react": "^7.0.0",
     "@babel/register": "^7.4.4",
+    "babel-jest": "24.8.0",
+    "babel-plugin-transform-es2015-modules-commonjs": "^6.26.2",
     "copyfiles": "^2.1.0",
     "css-loader": "^3.0.0",
+    "enzyme": "^3.10.0",
+    "enzyme-adapter-react-16": "^1.14.0",
+    "enzyme-to-json": "^3.3.5",
+    "identity-obj-proxy": "^3.0.0",
+    "jest": "24.7.1",
     "node-sass": "^4.12.0",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",

@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`WC React App Tests should render correctly 1`] = `
+<WCReactApp>
+  <div
+    className="parent-wrapper"
+  >
+    <span
+      className="title"
+    >
+      React Child Updated
+    </span>
+  </div>
+</WCReactApp>
+`;
