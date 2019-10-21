@@ -1,7 +1,6 @@
 {
   "name": "wc-nested-react-component",
-  "version": "0.1.1",
-  "dependencies": {},
+  "version": "0.1.2",
   "scripts": {
     "start": "react-scripts start",
     "build-old": "npm run build:react && npm run build:bundle",
